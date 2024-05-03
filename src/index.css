@@ -86,7 +86,7 @@ button:focus-visible {
   }
 }
 
-.swiper-slide img {
+.main-section {
   display: block;
   width: 100%;
   background-image: url(assets/shadow.png);
@@ -103,4 +103,8 @@ button:focus-visible {
 }
 .swiper-button-prev:after {
   color: #ffffff;
+}
+
+.how-to-buy {
+  width: 350px;
 }

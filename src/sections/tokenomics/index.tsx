@@ -30,7 +30,7 @@ const CaPaper = styled(Box)(({ theme }) => ({
   justifyContent: "space-between",
   padding: "20px",
   marginTop: 40,
-  [theme.breakpoints.down("xs")]: {
+  [theme.breakpoints.down("sm")]: {
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
@@ -113,7 +113,7 @@ const Tokenomics = (props: Props) => {
                   total supply
                 </Typography>
                 <Typography textAlign={"left"} variant="h3" mt={1}>
-                  1000,000,000
+                  1000,000
                 </Typography>
                 <Typography textAlign={"left"} mt={1}>
                   ✔ 90% Liquidity Pool

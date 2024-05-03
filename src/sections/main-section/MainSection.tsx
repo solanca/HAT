@@ -123,22 +123,22 @@ export default function MainSection() {
         }} // Update activeSlide state on slide change
       >
         <SwiperSlide>
-          <img src={Pet1} />
+          <img src={Pet1} className="main-section" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Pet2} />
+          <img src={Pet2} className="main-section" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Pet3} />
+          <img src={Pet3} className="main-section" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Pet4} />
+          <img src={Pet4} className="main-section" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Pet5} />
+          <img src={Pet5} className="main-section" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Pet6} />
+          <img src={Pet6} className="main-section" />
         </SwiperSlide>
       </Swiper>
       <Box

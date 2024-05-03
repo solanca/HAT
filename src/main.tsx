@@ -7,6 +7,7 @@ import MainSection from "./sections/main-section/MainSection";
 import Tokenomics from "./sections/tokenomics";
 import { ThemeProvider } from "@mui/material";
 import { theme } from "./styles/theme";
+import HowToBuy from "./sections/how-to-buy";
 export function Main() {
   const [count, setCount] = useState(0);
 
@@ -16,6 +17,7 @@ export function Main() {
         <Header />
         <MainSection />
         <Tokenomics />
+        <HowToBuy />
       </ThemeProvider>
     </>
   );
