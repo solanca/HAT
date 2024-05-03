@@ -157,7 +157,7 @@ const Tokenomics = (props: Props) => {
             <TokenoBox>
               <Grid
                 container
-                spacing={{ md: 6, sm: 2, xs: 1 }}
+                spacing={{ md: 3, sm: 2, xs: 1 }}
                 alignItems="stretch"
               >
                 <Grid item md="auto" sm={6} xs={6}>
