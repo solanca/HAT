@@ -19,14 +19,13 @@ const HowToBuy = (props: Props) => {
         <Typography variant="h2">HOW TO BUY</Typography>
       </Grid>
       <Grid container justifyContent={"center"}>
-        <Grid item md={10} sm={10} xs={10}>
+        <Grid item md={10} sm={10} xs={10} className="how-to-buy-swiper">
           <Swiper
             grabCursor={true}
             modules={[Pagination]}
             slidesPerView={"auto"}
             spaceBetween={30}
             effect="slide"
-            className="how-to-buy-swiper"
           >
             <SwiperSlide className="how-to-buy">
               <HowItem
