@@ -18,7 +18,7 @@ const HowToBuy = (props: Props) => {
       <Grid container justifyContent={"center"} mt={14}>
         <Typography variant="h2">HOW TO BUY</Typography>
       </Grid>
-      <Grid container justifyContent={"center"} mt={5}>
+      <Grid container justifyContent={"center"}>
         <Grid item md={10} sm={10} xs={10}>
           <Swiper
             grabCursor={true}
@@ -26,6 +26,7 @@ const HowToBuy = (props: Props) => {
             slidesPerView={"auto"}
             spaceBetween={30}
             effect="slide"
+            className="how-to-buy-swiper"
           >
             <SwiperSlide className="how-to-buy">
               <HowItem
