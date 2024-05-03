@@ -18,7 +18,7 @@ const HowToBuy = (props: Props) => {
       <Grid container justifyContent={"center"} mt={14}>
         <Typography variant="h2">HOW TO BUY</Typography>
       </Grid>
-      <Grid container justifyContent={"center"}>
+      <Grid container justifyContent={"center"} mt={5}>
         <Grid item md={10} sm={10} xs={10}>
           <Swiper
             grabCursor={true}

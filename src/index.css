@@ -106,5 +106,5 @@ button:focus-visible {
 }
 
 .how-to-buy {
-  width: 350px;
+  width: 350px !important;
 }
