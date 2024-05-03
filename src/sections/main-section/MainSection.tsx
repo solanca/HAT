@@ -16,7 +16,12 @@ import "swiper/css/navigation";
 // import "./styles.css";
 
 // import required modules
-import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
+import {
+  Autoplay,
+  EffectCoverflow,
+  Navigation,
+  Pagination,
+} from "swiper/modules";
 import {
   Box,
   GlobalStyles,
@@ -66,6 +71,7 @@ export default function MainSection() {
         }}
       />
       <Swiper
+        autoplay={{ delay: 3000 }}
         breakpoints={{
           // when window width is >= 640px
           640: {
@@ -78,6 +84,7 @@ export default function MainSection() {
           // when window width is >= 1024px
           1024: {
             slidesPerView: 3,
+            // autoplay: { delay: 3000 },
             // spaceBetween: 100,
           },
         }}
@@ -95,10 +102,10 @@ export default function MainSection() {
           modifier: 1.2,
           slideShadows: false,
         }}
-        pagination={true}
-        modules={[EffectCoverflow, Pagination, Navigation]}
+        // pagination={true}
+        modules={[EffectCoverflow, Autoplay, Navigation]}
         className="mySwiper"
-        parallax
+        // parallax
         onSlideChange={(swiper) => {
           let adjustedIndex;
           switch (swiper.realIndex) {
@@ -133,15 +140,6 @@ export default function MainSection() {
         <SwiperSlide>
           <img src={Pet6} />
         </SwiperSlide>
-        {/* <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-        </SwiperSlide> */}
       </Swiper>
       <Box
         sx={{
