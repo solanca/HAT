@@ -1,4 +1,4 @@
-import { Grid, Typography, useTheme } from "@mui/material";
+import { Box, Grid, Typography, useTheme } from "@mui/material";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import HowItem from "./item";
@@ -14,7 +14,7 @@ type Props = {};
 
 const HowToBuy = (props: Props) => {
   return (
-    <>
+    <Box id="how-to-buy">
       <Grid container justifyContent={"center"} mt={14}>
         <Typography variant="h2">HOW TO BUY</Typography>
       </Grid>
@@ -66,7 +66,7 @@ const HowToBuy = (props: Props) => {
           </Swiper>
         </Grid>
       </Grid>
-    </>
+    </Box>
   );
 };
 

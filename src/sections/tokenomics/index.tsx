@@ -69,11 +69,11 @@ const Tokenomics = (props: Props) => {
       });
   };
   return (
-    <>
+    <Box id="tokenomics">
       <Grid container justifyContent={"center"}>
         <Typography variant="h2">TOKENOMICS</Typography>
       </Grid>
-      <Grid container justifyContent={"center"}>
+      <Grid container justifyContent={"center"} mt={6}>
         <Grid item md={10} sm={10} xs={10}>
           <TokenCard>
             <Hidden smDown>
@@ -205,7 +205,7 @@ const Tokenomics = (props: Props) => {
         </Grid>
       </Grid>
       <ToastContainer />
-    </>
+    </Box>
   );
 };
 
