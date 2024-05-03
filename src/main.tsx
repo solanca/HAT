@@ -5,14 +5,18 @@ import FarmLogo from "./assets/logo.png";
 import Header from "./component/Header";
 import MainSection from "./sections/main-section/MainSection";
 import Tokenomics from "./sections/tokenomics";
+import { ThemeProvider } from "@mui/material";
+import { theme } from "./styles/theme";
 export function Main() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <Header />
-      <MainSection />
-      <Tokenomics />
+      <ThemeProvider theme={theme}>
+        <Header />
+        <MainSection />
+        <Tokenomics />
+      </ThemeProvider>
     </>
   );
 }
